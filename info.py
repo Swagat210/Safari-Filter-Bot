@@ -57,7 +57,7 @@ NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://swagat210:<swagat210>@swagat210.3gazjhn.mongodb.net/?retryWrites=true&w=majority&appName=Swagat210")
 DATABASE_NAME = environ.get('DATABASE_NAME', "swagat210")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Safaribotts')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'swagat210')
 
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'sharedisklinks.com'))
