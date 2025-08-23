@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', "29270492"))
 API_HASH = environ.get('API_HASH', "c0ff4a728d5da8de25807766b2901111")
-BOT_TOKEN = environ.get('BOT_TOKEN', "7841025847:AAHOPBMU-EiJi1PykSyUWphPlGZZN3VSje4")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7887364346:AAFFQequ8emKjjSg3iGey6CiXxL75xbYXx8")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 
 # Bot settings
@@ -47,9 +47,9 @@ LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), False)
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7990200132').split()]
 OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "Tedharedha") # widout 👉 @
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002101778109').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 # post channel auto post new movie
-POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1001998895377').split(','))))
+POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '0').split(','))))
 AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '0'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
@@ -57,20 +57,20 @@ NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://swagat210:<swagat210>@swagat210.3gazjhn.mongodb.net/?retryWrites=true&w=majority&appName=Swagat210")
 DATABASE_NAME = environ.get('DATABASE_NAME', "swagat210")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'swagat210')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Collection')
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'sharedisklinks.com'))
-STREAM_API = (environ.get('STREAM_API', '587f94f0e0b1813a52aed61290af6ea79d6ee464'))
-STREAM_HTO = (environ.get('STREAMHTO', 'https://t.me/Hoe/69'))
+STREAM_SITE = (environ.get('STREAM_SITE', ''))
+STREAM_API = (environ.get('STREAM_API', '')
+STREAM_HTO = (environ.get('STREAMHTO', ''))
 STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
 
 
 #verify site api and url
 IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-VERIFY_URL = environ.get('VERIFY_URL', 'sharedisklinks.com')
-VERIFY_API = (environ.get('VERIFY_API', '587f94f0e0b1813a52aed61290af6ea79d6ee464'))
+VERIFY_URL = environ.get('VERIFY_URL', '')
+VERIFY_API = (environ.get('VERIFY_API', '')
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "600"))
 VERIFY_URL2 = environ.get('VERIFY_URL2', 'sharedisklinks.com')
@@ -80,9 +80,9 @@ THIRD_VERIFY_GAP = int(environ.get('THIRD_VERIFY_GAP', "600"))
 VERIFY_URL3 = environ.get('VERIFY_URL3', 'sharedisklinks.com')
 VERIFY_API3 = (environ.get('VERIFY_API3', '587f94f0e0b1813a52aed61290af6ea79d6ee464'))
  
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/shdjekkw')
-TUTORIAL2 = environ.get('TUTORIAL2', 'https://t.me/hejejje')
-TUTORIAL3 = environ.get('TUTORIAL3', 'https://t.me/safabsovhwi3')
+TUTORIAL = environ.get('TUTORIAL', '')
+TUTORIAL2 = environ.get('TUTORIAL2', '')
+TUTORIAL3 = environ.get('TUTORIAL3', '')
 
 # auto files delete
 AUTO_FILE_DELETE = is_enabled((environ.get('AUTO_FILE_DELETE', "True")), False)
